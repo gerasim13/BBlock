@@ -17,6 +17,8 @@ static char SKProductsRequestDelegateBBlockKey;
 @end
 
 @implementation SKProductsRequestBBlockDelegate
+@synthesize block;
+
 - (void)productsRequest:(SKProductsRequest *)request didReceiveResponse:(SKProductsResponse *)response{
     if(self.block){
         self.block(response, nil);

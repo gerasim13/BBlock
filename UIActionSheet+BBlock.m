@@ -17,6 +17,8 @@ static char UIActionSheetDelegateBBlockKey;
 @end
 
 @implementation UIActionSheetDelegate
+@synthesize block;
+
 - (void)actionSheet:(UIActionSheet *)sheetView clickedButtonAtIndex:(NSInteger)buttonIndex{
     if(self.block){
         self.block(buttonIndex, sheetView);

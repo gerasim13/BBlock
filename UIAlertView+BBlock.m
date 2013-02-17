@@ -17,6 +17,8 @@ static char UIAlertViewDelegateBBlockKey;
 @end
 
 @implementation UIAlertViewBBlockDelegate
+@synthesize block;
+
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     if(self.block){
         self.block(buttonIndex, alertView);
