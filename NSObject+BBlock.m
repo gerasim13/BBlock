@@ -38,7 +38,7 @@ static char BBKVOObjectKey;
     
     NSString *identifier = [[NSProcessInfo processInfo] globallyUniqueString];
     NSMutableDictionary *observers = objc_getAssociatedObject(self, &BBKVOObjectKey) ?: [NSMutableDictionary dictionary];
-    [observers setObject:@{@"observer":kvoObject, @"keypath":keyPath} forKey:identifier];
+    observers[identifier] = @{@"observer":kvoObject, @"keypath":keyPath};
     objc_setAssociatedObject(self, &BBKVOObjectKey, observers, OBJC_ASSOCIATION_RETAIN);      
     return identifier;
 }
