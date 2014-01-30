@@ -6,6 +6,8 @@
 //  Copyright (c) 2012 David Keegan. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+
 @interface NSButton(BBlock)
 
 typedef void (^BBNSButtonCallback)(NSButton *button);
