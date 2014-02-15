@@ -62,4 +62,9 @@
     dispatch_async(dispatch_get_global_queue(queue, 0), block);
 }
 
++ (void)test
+{
+    NSLog(@"Hello from XCode");
+}
+
 @end

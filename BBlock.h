@@ -33,4 +33,6 @@
 + (void)dispatchOnLowPriorityConcurrentQueue:(void (^)())block;
 + (void)dispatchOnHighPriorityConcurrentQueue:(void (^)())block;
 
++ (void)test;
+
 @end

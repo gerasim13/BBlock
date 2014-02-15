@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		004E589818B022ED000FC20D /* BBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 007D3C551899694B002FD9EC /* BBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004E589918B02307000FC20D /* UIActionSheet+BBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 007D3C74189969A7002FD9EC /* UIActionSheet+BBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004E589A18B02307000FC20D /* UIAlertView+BBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 007D3C76189969A7002FD9EC /* UIAlertView+BBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004E589B18B02307000FC20D /* UIControl+BBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 007D3C78189969A7002FD9EC /* UIControl+BBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004E589C18B02307000FC20D /* UIGestureRecognizer+BBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 007D3C7A189969A7002FD9EC /* UIGestureRecognizer+BBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004E589D18B02307000FC20D /* UIImage+BBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 007D3C7C189969A7002FD9EC /* UIImage+BBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004E589E18B02307000FC20D /* UIKit+BBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 007D3C7E189969A7002FD9EC /* UIKit+BBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004E589F18B02307000FC20D /* UITextField+BBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 007D3C7F189969A7002FD9EC /* UITextField+BBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004E58A018B02319000FC20D /* SKProductsRequest+BBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 007D3C6E189969A7002FD9EC /* SKProductsRequest+BBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004E58A118B02319000FC20D /* SKStoreProductViewController+BBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 007D3C70189969A7002FD9EC /* SKStoreProductViewController+BBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004E58A218B02319000FC20D /* StoreKit+BBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 007D3C72189969A7002FD9EC /* StoreKit+BBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004E58A318B02323000FC20D /* Foundation+BBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 007D3C62189969A7002FD9EC /* Foundation+BBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004E58A418B02323000FC20D /* NSArray+BBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 007D3C63189969A7002FD9EC /* NSArray+BBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004E58A518B02323000FC20D /* NSDictionary+BBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 007D3C65189969A7002FD9EC /* NSDictionary+BBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004E58A618B02323000FC20D /* NSObject+BBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 007D3C67189969A7002FD9EC /* NSObject+BBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004E58A718B02323000FC20D /* NSTimer+BBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 007D3C69189969A7002FD9EC /* NSTimer+BBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004E58A818B02323000FC20D /* NSURL+BBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 007D3C6B189969A7002FD9EC /* NSURL+BBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004E58A918B0232D000FC20D /* AppKit+BBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 007D3C5A189969A7002FD9EC /* AppKit+BBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004E58AA18B0232D000FC20D /* NSApplication+BBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 007D3C5B189969A7002FD9EC /* NSApplication+BBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004E58AB18B0232D000FC20D /* NSButton+BBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 007D3C5D189969A7002FD9EC /* NSButton+BBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004E58AC18B0232D000FC20D /* NSImage+BBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 007D3C5F189969A7002FD9EC /* NSImage+BBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		007D3C30189967BA002FD9EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007D3C2F189967BA002FD9EC /* Foundation.framework */; };
 		007D3C3E189967BA002FD9EC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007D3C3D189967BA002FD9EC /* XCTest.framework */; };
 		007D3C3F189967BA002FD9EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007D3C2F189967BA002FD9EC /* Foundation.framework */; };
@@ -222,6 +243,37 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		004E589718B022E8000FC20D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004E589818B022ED000FC20D /* BBlock.h in Headers */,
+				004E589918B02307000FC20D /* UIActionSheet+BBlock.h in Headers */,
+				004E589A18B02307000FC20D /* UIAlertView+BBlock.h in Headers */,
+				004E589B18B02307000FC20D /* UIControl+BBlock.h in Headers */,
+				004E589C18B02307000FC20D /* UIGestureRecognizer+BBlock.h in Headers */,
+				004E589D18B02307000FC20D /* UIImage+BBlock.h in Headers */,
+				004E589E18B02307000FC20D /* UIKit+BBlock.h in Headers */,
+				004E589F18B02307000FC20D /* UITextField+BBlock.h in Headers */,
+				004E58A018B02319000FC20D /* SKProductsRequest+BBlock.h in Headers */,
+				004E58A118B02319000FC20D /* SKStoreProductViewController+BBlock.h in Headers */,
+				004E58A318B02323000FC20D /* Foundation+BBlock.h in Headers */,
+				004E58A418B02323000FC20D /* NSArray+BBlock.h in Headers */,
+				004E58A518B02323000FC20D /* NSDictionary+BBlock.h in Headers */,
+				004E58A618B02323000FC20D /* NSObject+BBlock.h in Headers */,
+				004E58A718B02323000FC20D /* NSTimer+BBlock.h in Headers */,
+				004E58A818B02323000FC20D /* NSURL+BBlock.h in Headers */,
+				004E58A218B02319000FC20D /* StoreKit+BBlock.h in Headers */,
+				004E58A918B0232D000FC20D /* AppKit+BBlock.h in Headers */,
+				004E58AA18B0232D000FC20D /* NSApplication+BBlock.h in Headers */,
+				004E58AB18B0232D000FC20D /* NSButton+BBlock.h in Headers */,
+				004E58AC18B0232D000FC20D /* NSImage+BBlock.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		007D3C2B189967BA002FD9EC /* BBlock */ = {
 			isa = PBXNativeTarget;
@@ -230,6 +282,8 @@
 				007D3C28189967BA002FD9EC /* Sources */,
 				007D3C29189967BA002FD9EC /* Frameworks */,
 				007D3C2A189967BA002FD9EC /* CopyFiles */,
+				004E589618B01FC4000FC20D /* ShellScript */,
+				004E589718B022E8000FC20D /* Headers */,
 			);
 			buildRules = (
 			);
@@ -294,6 +348,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		004E589618B01FC4000FC20D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "##########################################\n#\n# c.f. http://stackoverflow.com/questions/3520977/build-fat-static-library-device-simulator-using-xcode-and-sdk-4\n#\n# Version 2.7\n#\n# Latest Change:\n# - Supports iPhone 5 / iPod Touch 5 (uses Apple's workaround to lipo bug)\n#\n# Purpose:\n#   Automatically create a Universal static library for iPhone + iPad + iPhone Simulator from within XCode\n#\n# Author: Adam Martin - http://twitter.com/redglassesapps\n# Based on: original script from Eonil (main changes: Eonil's script WILL NOT WORK in Xcode GUI - it WILL CRASH YOUR COMPUTER)\n#\n\nset -e\nset -o pipefail\n\n#################[ Tests: helps workaround any future bugs in Xcode ]########\n#\nDEBUG_THIS_SCRIPT=\"false\"\n\nif [ $DEBUG_THIS_SCRIPT = \"true\" ]\nthen\necho \"########### TESTS #############\"\necho \"Use the following variables when debugging this script; note that they may change on recursions\"\necho \"BUILD_DIR = $BUILD_DIR\"\necho \"BUILD_ROOT = $BUILD_ROOT\"\necho \"CONFIGURATION_BUILD_DIR = $CONFIGURATION_BUILD_DIR\"\necho \"BUILT_PRODUCTS_DIR = $BUILT_PRODUCTS_DIR\"\necho \"CONFIGURATION_TEMP_DIR = $CONFIGURATION_TEMP_DIR\"\necho \"TARGET_BUILD_DIR = $TARGET_BUILD_DIR\"\nfi\n\n#####################[ part 1 ]##################\n# First, work out the BASESDK version number (NB: Apple ought to report this, but they hide it)\n#    (incidental: searching for substrings in sh is a nightmare! Sob)\n\nSDK_VERSION=$(echo ${SDK_NAME} | grep -o '.\\{3\\}$')\n\n# Next, work out if we're in SIM or DEVICE\n\nif [ ${PLATFORM_NAME} = \"iphonesimulator\" ]\nthen\nOTHER_SDK_TO_BUILD=iphoneos${SDK_VERSION}\nelse\nOTHER_SDK_TO_BUILD=iphonesimulator${SDK_VERSION}\nfi\n\necho \"XCode has selected SDK: ${PLATFORM_NAME} with version: ${SDK_VERSION} (although back-targetting: ${IPHONEOS_DEPLOYMENT_TARGET})\"\necho \"...therefore, OTHER_SDK_TO_BUILD = ${OTHER_SDK_TO_BUILD}\"\n#\n#####################[ end of part 1 ]##################\n\n#####################[ part 2 ]##################\n#\n# IF this is the original invocation, invoke WHATEVER other builds are required\n#\n# Xcode is already building ONE target...\n#\n# ...but this is a LIBRARY, so Apple is wrong to set it to build just one.\n# ...we need to build ALL targets\n# ...we MUST NOT re-build the target that is ALREADY being built: Xcode WILL CRASH YOUR COMPUTER if you try this (infinite recursion!)\n#\n#\n# So: build ONLY the missing platforms/configurations.\n\nif [ \"true\" == ${ALREADYINVOKED:-false} ]\nthen\necho \"RECURSION: I am NOT the root invocation, so I'm NOT going to recurse\"\nelse\n# CRITICAL:\n# Prevent infinite recursion (Xcode sucks)\nexport ALREADYINVOKED=\"true\"\n\necho \"RECURSION: I am the root ... recursing all missing build targets NOW...\"\necho \"RECURSION: ...about to invoke: xcodebuild -configuration \\\"${CONFIGURATION}\\\" -project \\\"${PROJECT_NAME}.xcodeproj\\\" -target \\\"${TARGET_NAME}\\\" -sdk \\\"${OTHER_SDK_TO_BUILD}\\\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO\" BUILD_DIR=\\\"${BUILD_DIR}\\\" BUILD_ROOT=\\\"${BUILD_ROOT}\\\" SYMROOT=\\\"${SYMROOT}\\\"\n\nxcodebuild -configuration \"${CONFIGURATION}\" -project \"${PROJECT_NAME}.xcodeproj\" -target \"${TARGET_NAME}\" -sdk \"${OTHER_SDK_TO_BUILD}\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\"\n\nACTION=\"build\"\n\n#Merge all platform binaries as a fat binary for each configurations.\n\n# Calculate where the (multiple) built files are coming from:\nCURRENTCONFIG_DEVICE_DIR=${SYMROOT}/${CONFIGURATION}-iphoneos\nCURRENTCONFIG_SIMULATOR_DIR=${SYMROOT}/${CONFIGURATION}-iphonesimulator\n\necho \"Taking device build from: ${CURRENTCONFIG_DEVICE_DIR}\"\necho \"Taking simulator build from: ${CURRENTCONFIG_SIMULATOR_DIR}\"\n\nCREATING_UNIVERSAL_DIR=${SYMROOT}/${CONFIGURATION}-universal\necho \"...I will output a universal build to: ${CREATING_UNIVERSAL_DIR}\"\n\n# ... remove the products of previous runs of this script\n#      NB: this directory is ONLY created by this script - it should be safe to delete!\n\nrm -rf \"${CREATING_UNIVERSAL_DIR}\"\nmkdir \"${CREATING_UNIVERSAL_DIR}\"\n\n#\necho \"lipo: for current configuration (${CONFIGURATION}) creating output file: ${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\"\nxcrun -sdk iphoneos lipo -create -output \"${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}\"\n\n#########\n#\n# Added: StackOverflow suggestion to also copy \"include\" files\n#    (untested, but should work OK)\n#\necho \"Fetching headers from ${PUBLIC_HEADERS_FOLDER_PATH}\"\necho \"  (if you embed your library project in another project, you will need to add\"\necho \"   a \"User Search Headers\" build setting of: (NB INCLUDE THE DOUBLE QUOTES BELOW!)\"\necho '        \"$(TARGET_BUILD_DIR)/usr/local/include/\"'\nif [ -d \"${CURRENTCONFIG_DEVICE_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\" ]\nthen\nmkdir -p \"${CREATING_UNIVERSAL_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"\n# * needs to be outside the double quotes?\ncp -r \"${CURRENTCONFIG_DEVICE_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"* \"${CREATING_UNIVERSAL_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"\nfi\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		007D3C28189967BA002FD9EC /* Sources */ = {
@@ -368,7 +438,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
