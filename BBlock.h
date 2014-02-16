@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 /// For when you need a weak reference of an object, example: `BBlockWeakObject(obj) wobj = obj;`
 #define BBlockWeakObject(o) __typeof__(o) __weak
@@ -33,6 +34,13 @@
 + (void)dispatchOnLowPriorityConcurrentQueue:(void (^)())block;
 + (void)dispatchOnHighPriorityConcurrentQueue:(void (^)())block;
 
-+ (void)test;
+/// UIImage Helper Methods
++ (UIImage *)imageForSize:(CGSize)size withDrawingBlock:(void(^)())drawingBlock;
++ (UIImage *)imageForSize:(CGSize)size opaque:(BOOL)opaque withDrawingBlock:(void(^)())drawingBlock;
++ (UIImage *)imageWithIdentifier:(NSString *)identifier forSize:(CGSize)size andDrawingBlock:(void(^)())drawingBlock;
++ (UIImage *)imageWithIdentifier:(NSString *)identifier opaque:(BOOL)opaque forSize:(CGSize)size andDrawingBlock:(void(^)())drawingBlock;
++ (UIImage *)imageWithIdentifier:(NSString *)identifier;
++ (void)removeImageWithIdentifier:(NSString *)identifier;
++ (void)removeAllImages;
 
 @end

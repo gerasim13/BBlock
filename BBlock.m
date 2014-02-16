@@ -7,6 +7,7 @@
 //
 
 #import "BBlock.h"
+#import "UIImage+BBlock.h"
 
 @implementation BBlock
 
@@ -62,9 +63,40 @@
     dispatch_async(dispatch_get_global_queue(queue, 0), block);
 }
 
-+ (void)test
+/// UIImage Helper Methods
++ (UIImage *)imageForSize:(CGSize)size withDrawingBlock:(void(^)())drawingBlock
 {
-    NSLog(@"Hello from XCode");
+    return [UIImage imageForSize:size withDrawingBlock:drawingBlock];
+}
+
++ (UIImage *)imageForSize:(CGSize)size opaque:(BOOL)opaque withDrawingBlock:(void(^)())drawingBlock
+{
+    return [UIImage imageForSize:size opaque:opaque withDrawingBlock:drawingBlock];
+}
+
++ (UIImage *)imageWithIdentifier:(NSString *)identifier forSize:(CGSize)size andDrawingBlock:(void(^)())drawingBlock
+{
+    return [UIImage imageWithIdentifier:identifier forSize:size andDrawingBlock:drawingBlock];
+}
+
++ (UIImage *)imageWithIdentifier:(NSString *)identifier opaque:(BOOL)opaque forSize:(CGSize)size andDrawingBlock:(void(^)())drawingBlock
+{
+    return [UIImage imageWithIdentifier:identifier opaque:opaque forSize:size andDrawingBlock:drawingBlock];
+}
+
++ (UIImage *)imageWithIdentifier:(NSString *)identifier
+{
+    return [UIImage imageWithIdentifier:identifier];
+}
+
++ (void)removeImageWithIdentifier:(NSString *)identifier
+{
+    [UIImage removeImageWithIdentifier:identifier];
+}
+
++ (void)removeAllImages
+{
+    [UIImage removeAllImages];
 }
 
 @end
