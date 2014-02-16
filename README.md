@@ -1,25 +1,3 @@
-##BBNSButton.h
-
-###@interface BBNSButton : NSButton
-
-Set the callback block to be called when the mouse **enters** the button.
-
-```obj-c
-- (void)setInCallback:(BBNSButtonCallback)block;
-```
-
-Set the callback block to be called when the mouse **exits** the button.
-
-```obj-c
-- (void)setOutCallback:(BBNSButtonCallback)block;
-```
-
-Set both the **enter* and **exit** callback blocks.
-
-```obj-c
-- (void)setInCallback:(BBNSButtonCallback)inBlock andOutCallback:(BBNSButtonCallback)outBlock;
-```
-
 ##BBlock.h
 
 ###@interface BBlock : NSObject

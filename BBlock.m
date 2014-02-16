@@ -7,7 +7,9 @@
 //
 
 #import "BBlock.h"
-#import "UIImage+BBlock.h"
+#import "Foundation+BBlock.h"
+#import "StoreKit+BBlock.h"
+#import "UIKit+BBlock.h"
 
 @implementation BBlock
 
