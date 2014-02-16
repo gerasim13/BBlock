@@ -21,7 +21,7 @@
     NSParameterAssert(block != nil);
     NSArray *keys = [[self allKeys] sortedArrayUsingSelector:@selector(compare:)];
     [keys enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        block(obj, [self objectForKey:obj], idx);
+        block(obj, self[obj], idx);
     }];
 }
 
