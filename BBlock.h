@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "Foundation+BBlock.h"
+#import "StoreKit+BBlock.h"
+#import "UIKit+BBlock.h"
 
 /// For when you need a weak reference of an object, example: `BBlockWeakObject(obj) wobj = obj;`
 #define BBlockWeakObject(o) __typeof__(o) __weak
@@ -42,5 +45,12 @@
 + (UIImage *)imageWithIdentifier:(NSString *)identifier;
 + (void)removeImageWithIdentifier:(NSString *)identifier;
 + (void)removeAllImages;
+
+/// UIAlertView Helper Methods
++ (UIAlertView *)alertWithTitle:(NSString *)title
+                        message:(NSString *)message
+              cancelButtonTitle:(NSString *)cancelTitle
+               otherButtonTitle:(NSString *)otherButtonTitle
+                completionBlock:(UIAlertViewBBlock)block;
 
 @end

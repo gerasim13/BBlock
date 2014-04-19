@@ -7,24 +7,24 @@
 //
 
 #import "BBlock.h"
-#import "Foundation+BBlock.h"
-#import "StoreKit+BBlock.h"
-#import "UIKit+BBlock.h"
 
 @implementation BBlock
 
-+ (void)dispatchOnMainThread:(void (^)())block{
++ (void)dispatchOnMainThread:(void (^)())block
+{
     NSParameterAssert(block != nil);
     dispatch_async(dispatch_get_main_queue(), block);
 }
 
-+ (void)dispatchAfter:(NSTimeInterval)delay onMainThread:(void (^)())block{
++ (void)dispatchAfter:(NSTimeInterval)delay onMainThread:(void (^)())block
+{
     NSParameterAssert(block != nil);
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delay*NSEC_PER_SEC);
     dispatch_after(popTime, dispatch_get_main_queue(), block);
 }
 
-+ (void)dispatchOnSynchronousQueue:(void (^)())block{
++ (void)dispatchOnSynchronousQueue:(void (^)())block
+{
     NSParameterAssert(block != nil);
     static dispatch_queue_t queue;
     static dispatch_once_t once;
@@ -36,7 +36,8 @@
     }
 }
 
-+ (void)dispatchOnSynchronousFileQueue:(void (^)())block{
++ (void)dispatchOnSynchronousFileQueue:(void (^)())block
+{
     NSParameterAssert(block != nil);
     static dispatch_queue_t queue;
     static dispatch_once_t once;
@@ -48,19 +49,23 @@
     }
 }
 
-+ (void)dispatchOnDefaultPriorityConcurrentQueue:(void (^)())block{
++ (void)dispatchOnDefaultPriorityConcurrentQueue:(void (^)())block
+{
     [self dispatchOnConcurrentQueue:DISPATCH_QUEUE_PRIORITY_DEFAULT withBlock:block];
 }
 
-+ (void)dispatchOnLowPriorityConcurrentQueue:(void (^)())block{
++ (void)dispatchOnLowPriorityConcurrentQueue:(void (^)())block
+{
     [self dispatchOnConcurrentQueue:DISPATCH_QUEUE_PRIORITY_LOW withBlock:block];
 }
 
-+ (void)dispatchOnHighPriorityConcurrentQueue:(void (^)())block{
++ (void)dispatchOnHighPriorityConcurrentQueue:(void (^)())block
+{
     [self dispatchOnConcurrentQueue:DISPATCH_QUEUE_PRIORITY_HIGH withBlock:block];    
 }
 
-+ (void)dispatchOnConcurrentQueue:(long)queue withBlock:(void (^)())block{
++ (void)dispatchOnConcurrentQueue:(long)queue withBlock:(void (^)())block
+{
     NSParameterAssert(block != nil);
     dispatch_async(dispatch_get_global_queue(queue, 0), block);
 }
@@ -99,6 +104,21 @@
 + (void)removeAllImages
 {
     [UIImage removeAllImages];
+}
+
+/// UIAlertView Helper Methods
+
++ (UIAlertView *)alertWithTitle:(NSString *)title
+                        message:(NSString *)message
+              cancelButtonTitle:(NSString *)cancelTitle
+               otherButtonTitle:(NSString *)otherButtonTitle
+                completionBlock:(UIAlertViewBBlock)block
+{
+    return [[UIAlertView alloc] initWithTitle:title
+                                      message:message
+                            cancelButtonTitle:cancelTitle
+                             otherButtonTitle:otherButtonTitle
+                              completionBlock:block];
 }
 
 @end
